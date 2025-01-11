@@ -1,0 +1,24 @@
+[project]
+# General repo info
+name = "project-name"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "This is a project description"
+readme = "README.md"
+authors = [
+    { name = "Ruben Bosschaert", email = "email@email.email"},
+]
+dependencies = ["requests>=2.13.0", "numpy>=0.10",]
+
+[project.optional-dependencies]
+# Add development dependencies here
+dev = [
+"pytest>=5.1.0", #Pytest is a testing framework
+"ruff>=0.1.0", #Ruff is a simple opinionated linter
+"mypy>=0.910.0" #Static type checker
+]
+
+[build-system]
+# Build system requirements (can swap between setuptools and flit and poetry)
+requires = ["setuptools>=67.8.0"]
+build-backend = "setuptools.build_meta"
