@@ -1,5 +1,6 @@
 
-# Welcome to the {X} APP
+# Welcome to my python project template
+This is a template for a python project. It is meant to be used as a starting point for new projects. It also includes a basic test structure and a basic documentation structure. 
 ## Introduction
 What is this tool about? What does it do? What problem does it solve?
 
@@ -39,5 +40,17 @@ pip install .[dev]
 ### Removing the virtual environment
 When one wants to start with a clean install simply delete the `.venv` directory.
 
+## Testing
+### Running the tests
+To run the tests, use the following command:
+```bash
+pytest tests/main_tests.py
+```
+
 ## Running the App
+To run the app, use the following command:
+```bash
+python src/main/main.py
+```
+
 

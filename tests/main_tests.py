@@ -16,4 +16,4 @@ def myname():
 def test_print_hi(myname):
     # Check if the main script runs without any errors
     sentance = src.main.main.print_hi(myname)
-    assert sentance == "Hi, John"
+    assert "Hi, John, it is currently" in sentance
